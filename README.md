@@ -1,10 +1,8 @@
-# Template with Next.js 13 + Typescript + Tailwind CSS
+# Redis with Vercel Edge
 
 ## No Extra packages added, super light version!
 
-![](./public/cover.jpg)
-
-This is a [Next.js](https://nextjs.org/) and with [Tailwind CSS](https://tailwindcss.com/)
+This is a [Next.js](https://nextjs.org/) and with [Upstash Redis](https://upstash.com/)
 
 ## Getting Started
 
@@ -20,11 +18,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+## Remember to add your Upstash Secrets
 
-To learn more about Next.js, take a look at the following resources:
+Register on [Upstash](https://upstash.com/) and add your secrets to the `.env` file, the following ones:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    UPSTASH_REDIS_REST_URL=
+    UPSTASH_REDIS_REST_TOKEN=
+    ```
