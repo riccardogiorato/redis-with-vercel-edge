@@ -1,5 +1,7 @@
 # Redis with Vercel Edge
 
+![Redis with Vercel Edge](public/cover.jpg)
+
 ## No Extra packages added, super light version!
 
 This is a [Next.js](https://nextjs.org/) and with [Upstash Redis](https://upstash.com/)
