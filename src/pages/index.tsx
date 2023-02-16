@@ -9,6 +9,7 @@ const Home: NextPage = () => {
     sameCountryVisits: number;
     totalVisits: number;
     countryEmoji: string;
+    countryName: string;
   }>("/api/redis", fetcher, {
     // disable all refetching
     revalidateOnFocus: false,
@@ -26,8 +27,8 @@ const Home: NextPage = () => {
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center max-w-lg gap-3">
         <h1 className="text-lg font-bold">Analytics</h1>
         <p className="text-xl text-slate-800">
-          {data?.countryEmoji} {data?.sameCountryVisits} visits from your
-          country
+          {data?.sameCountryVisits} visits from your country of{" "}
+          {data?.countryName} {data?.countryEmoji}
         </p>
         <p className="text-xl text-slate-800">
           {data?.totalVisits} total visits worldwide 🌎
