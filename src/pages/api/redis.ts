@@ -19,9 +19,13 @@ const redis = new Redis({
 export async function middleware(req: NextRequest) {
   const country = req.geo?.country || "fallback";
 
+  const countryEmoji = country !== "fallback" ? `:${country}:` : "";
+
   const sameCountryVisits = await redis.incr(country);
   const totalVisits = await redis.incr("total");
   return NextResponse.json({
-    message: `Hi from ${country}! You are visitor #${sameCountryVisits} from ${country} and visitor #${totalVisits} in total.`,
+    sameCountryVisits,
+    totalVisits,
+    countryEmoji,
   });
 }
