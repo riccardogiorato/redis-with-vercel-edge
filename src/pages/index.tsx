@@ -20,8 +20,6 @@ const Home: NextPage = () => {
     dedupingInterval: 0,
   });
 
-  // display analytics data in the center of the page with tailwind
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center max-w-lg gap-3">

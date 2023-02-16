@@ -24,7 +24,7 @@ You can start editing the page by modifying `src/pages/index.js`. The page auto-
 
 Register on [Upstash](https://upstash.com/) and add your secrets to the `.env` file, the following ones:
 
-    ```bash
-    UPSTASH_REDIS_REST_URL=
-    UPSTASH_REDIS_REST_TOKEN=
-    ```
+```bash
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
+```
